@@ -1,0 +1,39 @@
+.fondo{
+background-image:url("../assets/img/fondo.jpg");
+background-repeat:repeat;
+
+}
+
+.Nombre_pagina{
+  font-family: 'Pacifico', cursive;
+  margin-left: 35%;
+  font-size: 160%;
+  color: red;
+  text-shadow: rgba(206,89,55,0) 2px 2px 2px ;
+}
+.enlaces{
+  font-family: 'Pacifico', cursive;
+  margin-top: 5%;
+}
+.navegacion{
+  margin-left:15%;
+}
+.nave{
+  background-color: #DCC043;
+  opacity: 90%;
+}
+.buscar{
+  margin-top: 4%;
+  margin-left: 35%;
+}
+.contactenos{
+  background-color: #4B4A48;
+}
+.piePagina{
+  font-family: 'Pacifico', cursive;
+  color: white;
+  margin: 2%;
+}
+.textos-formulario{
+  color: white;
+}
