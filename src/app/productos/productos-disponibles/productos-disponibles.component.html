@@ -1,1 +1,18 @@
-<p>productos-disponibles works!</p>
+
+<div class="row ">
+
+<div *ngFor="let item of productos" class="card" style="width: 30%;">
+  <img src="../assets/img/hueso.PNG" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{item.nombre}}</h5>
+    <p class="card-text">Color: {{item.color}}<br>Tipo de mascota: {{item.tipo_mascota}}<br>Raza: {{item.raza}}<br>Precio: {{item.precio}}<br>En oferta: {{item.oferta}}<br>Tamaño: {{item.tamanio}}</p>
+
+    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+  </div>
+</div>
+
+
+
+
+
+</div>

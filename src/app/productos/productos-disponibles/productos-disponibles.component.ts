@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductoService } from '../servicios/producto.service';
+import { Producto } from '../modelo/producto';
 
 @Component({
   selector: 'productos-disponibles',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./productos-disponibles.component.css']
 })
 export class ProductosDisponiblesComponent implements OnInit {
-
-  constructor() { }
+ productos : Producto[]=[]
+  constructor(private srv:ProductoService) { }
 
   ngOnInit(): void {
+    this.srv.listarProductos().subscribe(data=>{
+this.productos = data
+    })
   }
 
 }
