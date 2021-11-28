@@ -1,15 +1,15 @@
 <div class="container">
 <h1 class="Nombre_pagina">Informacion de tu cuenta</h1>
-<div class="row">
+<div class="row" *ngFor="let item of usuario">
 
 <div class="row justify-content-md-center">
   <div class="col-6 ">
       <label>Escriba su numero de cedula</label>
     <div class="input-group mb-3">
 
-      <input type="number" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+      <input type="number" class="form-control" placeholder="" aria-label="Username" [(ngModel)]="txtCedula" aria-describedby="basic-addon1">
     </div>
-    <button type="button" class="btn btn-primary actualizar">Buscar</button>
+    <button type="button" class="btn btn-primary actualizar" (click)="listarUsuario()">Buscar</button>
     </div>
 </div>
 
@@ -17,7 +17,7 @@
     <label>Nombre</label>
   <div class="input-group mb-3">
 
-    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+    <input type="text" class="form-control" placeholder="" aria-label="Username" [(ngModel)]="nombre" aria-describedby="basic-addon1">
   </div>
 
   <label>Correo electronico</label>
