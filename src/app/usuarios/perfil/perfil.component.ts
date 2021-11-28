@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'perfil-usuarios',
   templateUrl: './perfil.component.html',
@@ -11,5 +12,7 @@ export class PerfilComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
 
 }
