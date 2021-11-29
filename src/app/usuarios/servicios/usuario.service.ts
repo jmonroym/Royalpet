@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Usuario } from '../modelo/usuario';
+import { Usuarios } from '../modelo/usuarios';
 @Injectable({
   providedIn: 'root'
 })
@@ -14,5 +15,7 @@ export class UsuarioService {
   actualizarUsuario(usuario:Usuario):Observable<any>{
 return this.http.put('https://backend-royalpet.glitch.me/api/usuarios/'+usuario._id, usuario)
   }
-
+ guardarUsuario(usuario:Usuarios):Observable<any>{
+   return this.http.post('https://backend-royalpet.glitch.me/api/usuarios/', usuario)
+ }
 }

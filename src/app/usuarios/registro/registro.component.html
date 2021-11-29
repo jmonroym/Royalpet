@@ -2,24 +2,24 @@
   <div class="col-8 registro-espacio">
     <form>
       <label for="Nombres-registro" class="form-label textos-formulario">Nombre</label>
-      <input class="form-control" type="text" value="" aria-label="readonly input example">
+      <input class="form-control" type="text" value="" aria-label="readonly input example" [(ngModel)]="nombresp" [ngModelOptions]="{standalone: true}">
 
       <label for="Apellidos-registro" class="form-label textos-formulario">Apellidos</label>
-      <input class="form-control" type="text" value="" aria-label="readonly input example">
+      <input class="form-control" type="text" value="" aria-label="readonly input example" [(ngModel)]="apellidosp" [ngModelOptions]="{standalone: true}">
 
       <label for="Correo-registro" class="form-label textos-formulario">Correo electronico</label>
-      <input class="form-control" type="text" value="" aria-label="readonly input example">
+      <input class="form-control" type="text" value="" aria-label="readonly input example" [(ngModel)]="correo_electronicop" [ngModelOptions]="{standalone: true}">
 
       <label for="Celular-registro" class="form-label textos-formulario">Numero de celular</label>
-      <input class="form-control" type="number" value="" aria-label="readonly input example">
+      <input class="form-control" type="number" value="" aria-label="readonly input example" [(ngModel)]="numero_celularp" [ngModelOptions]="{standalone: true}">
 
       <label for="fecha-registro" class="form-label textos-formulario">Fecha de nacimiento</label>
-      <input class="form-control" type="text" value="23/10/1991" aria-label="readonly input example">
+      <input class="form-control" type="text" placeholder="23/10/1991" aria-label="readonly input example" [(ngModel)]="fecha_nacimientop" [ngModelOptions]="{standalone: true}">
 
       <label for="Cedula-registro" class="form-label textos-formulario">Numero de cedula</label>
-      <input class="form-control" type="number" value="" aria-label="readonly input example">
+      <input class="form-control" type="number" value="" aria-label="readonly input example" [(ngModel)]="cedulap" [ngModelOptions]="{standalone: true}">
 
-      <button type="submit" class="btn btn-primary guardar-registro" routerLink='/busqueda-productos'>Guardar</button>
+      <button type="submit" class="btn btn-primary guardar-registro" routerLink='/busqueda-productos' (click)="guardarUsuario()">Guardar</button>
     </form>
   </div>
 </div>
