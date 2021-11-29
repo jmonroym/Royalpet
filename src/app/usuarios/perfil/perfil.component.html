@@ -1,62 +1,57 @@
 <div class="container">
-<h1 class="Nombre_pagina">Informacion de tu cuenta</h1>
-<div class="row" *ngFor="let item of usuario">
-
-<div class="row justify-content-md-center">
-  <div class="col-6 ">
+  <h1 class="Nombre_pagina">Informacion de tu cuenta</h1>
+  <div class="row justify-content-md-center">
+    <div class="col-6 ">
       <label>Escriba su numero de cedula</label>
-    <div class="input-group mb-3">
+      <div class="input-group mb-3">
+        <input type="number" class="form-control" placeholder="" aria-label="Username" [(ngModel)]="txtCedula"
+          aria-describedby="basic-addon1">
+      </div>
 
-      <input type="number" class="form-control" placeholder="" aria-label="Username" [(ngModel)]="txtCedula" aria-describedby="basic-addon1">
+      <button type="button" class="btn btn-primary actualizar" (click)="listarUsuario()">Buscar</button>
     </div>
-    <button type="button" class="btn btn-primary actualizar" (click)="listarUsuario()">Buscar</button>
+  </div>
+
+  <div class="row" *ngFor="let item of usuario">
+    <div class="col-6">
+      <label>Nombre</label>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="" aria-label="Username" [(ngModel)]="nombres"
+          aria-describedby="basic-addon1">
+      </div>
+
+      <label>Correo electronico</label>
+      <div class="input-group mb-3">
+
+        <input type="text" class="form-control" placeholder="" aria-label="Username" [(ngModel)]="correo_electronico"
+          aria-describedby="basic-addon1">
+      </div>
+
+      <label>Fecha de nacimiento</label>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="" aria-label="Username" [(ngModel)]="fecha_nacimiento"
+          aria-describedby="basic-addon1">
+      </div>
     </div>
-</div>
 
-<div class="col-6">
-    <label>Nombre</label>
-  <div class="input-group mb-3">
+    <div class="col-6">
+      <label>Apellidos</label>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="" aria-label="Username" [(ngModel)]="apellidos"
+          aria-describedby="basic-addon1">
+      </div>
 
-    <input type="text" class="form-control" placeholder="" aria-label="Username" [(ngModel)]="nombre" aria-describedby="basic-addon1">
+      <label>Numero de celular</label>
+      <div class="input-group mb-3">
+        <input type="number" class="form-control" placeholder="" aria-label="Username" [(ngModel)]="numero_celular"
+          aria-describedby="basic-addon1">
+      </div>
+
+      <label>Numero de cedula</label>
+      <div class="input-group mb-3">
+        <input type="number" class="form-control" placeholder="" aria-label="Username" [(ngModel)]="cedula"
+          aria-describedby="basic-addon1">
+      </div>
+    </div>
   </div>
-
-  <label>Correo electronico</label>
-  <div class="input-group mb-3">
-
-  <input type="text" class="form-control" placeholder="juanperez@hotmail.com" aria-label="Username" aria-describedby="basic-addon1">
-  </div>
-
-  <label>Fecha de nacimiento</label>
-<div class="input-group mb-3">
-
-  <input type="text" class="form-control" placeholder="23/10/1991" aria-label="Username" aria-describedby="basic-addon1">
-</div>
-
-</div>
-
-<div class="col-6">
-  <label>Apellidos</label>
-  <div class="input-group mb-3">
-
-    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-  </div>
-
-  <label>Numero de celular</label>
-  <div class="input-group mb-3">
-
-  <input type="number" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-  </div>
-
-  <label>Numero de cedula</label>
-  <div class="input-group mb-3">
-
-  <input type="number" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-  </div>
-
-</div>
-
-
-
-</div>
-<button type="button" class="btn btn-primary actualizar">Actualizar</button>
 </div>

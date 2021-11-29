@@ -8,9 +8,9 @@ describe('BusquedaComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BusquedaComponent ]
+      declarations: [BusquedaComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

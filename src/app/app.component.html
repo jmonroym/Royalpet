@@ -1,65 +1,70 @@
-
-<div class = "container fondo">
-<div class = "row">
-  <nav class="navbar navbar-expand-lg shadow p-3 mb-5  rounded nave ">
-    <div class = "col-2">
-      <a href="#">
-<img src="./assets/img/logo.jpg" width="100" height="100">
-</a>
-    </div>
-    <div class = "col-10">
-<div class = "col- 12 Nombre_pagina">Royal Pet</div>
-<div class = "col-12 enlaces">
-
-<div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-<ul class="navbar-nav">
-  <li class="nav-item">
-          <a routerLink="/busqueda-productos" class="nav-link active" aria-current="page" href="#">Inicio</a>
-        </li>
-  <li class="nav-item dropdown navegacion">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Alimentos
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Croquetas</a></li>
-            <li><a class="dropdown-item" href="#">Galletas</a></li>
-            <li><a class="dropdown-item" href="#">Concentrados</a></li>
-          </ul>
-          </li>
-
-          <li class="nav-item dropdown navegacion">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Aseo
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Cepillos</a></li>
-                    <li><a class="dropdown-item" href="#">jabones</a></li>
-                    <li><a class="dropdown-item" href="#">Champoo</a></li>
-                  </ul>
-                  </li>
-
-                  <li class="nav-item dropdown navegacion">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Juguetes
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Pelotas</a></li>
-                            <li><a class="dropdown-item" href="#">Huesos</a></li>
-                            <li><a class="dropdown-item" href="#">Gimnasios</a></li>
-                          </ul>
-                          </li>
-    <button type="button" class="btn btn-outline-secondary navegacion login">LOGIN</button>
-    <button type="button"  routerLink="/registro-usuarios" class="btn btn-outline-secondary navegacion">REGISTRO</button>
-    <button type="button" routerLink="/perfil-usuarios" class="btn btn-outline-secondary navegacion" >Mi perfil</button>
-</ul>
-</div>
-
-</div>
+<div class="container fondo">
+  <div class="row">
+    <nav class="navbar navbar-expand-lg shadow p-3 mb-5  rounded nave ">
+      <div class="col-2">
+        <a href="#">
+          <img src="./assets/img/logo.jpg" width="100" height="100">
+        </a>
       </div>
-  </nav>
 
+      <div class="col-10">
+        <div class="col- 12 Nombre_pagina">Royal Pet</div>
+        <div class="col-12 enlaces">
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a routerLink="/busqueda-productos" class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
 
+              <li class="nav-item dropdown navegacion">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Alimentos
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Croquetas</a></li>
+                  <li><a class="dropdown-item" href="#">Galletas</a></li>
+                  <li><a class="dropdown-item" href="#">Concentrados</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown navegacion">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Aseo
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Cepillos</a></li>
+                  <li><a class="dropdown-item" href="#">jabones</a></li>
+                  <li><a class="dropdown-item" href="#">Champoo</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown navegacion">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Juguetes
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Pelotas</a></li>
+                  <li><a class="dropdown-item" href="#">Huesos</a></li>
+                  <li><a class="dropdown-item" href="#">Gimnasios</a></li>
+                </ul>
+              </li>
+
+              <button type="button" class="btn btn-outline-secondary navegacion login">LOGIN</button>
+
+              <button type="button" routerLink="/registro-usuarios"
+                class="btn btn-outline-secondary navegacion">REGISTRO</button>
+
+              <button type="button" routerLink="/perfil-usuarios" class="btn btn-outline-secondary navegacion">Mi
+                perfil</button>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
   </div>
-
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </div>

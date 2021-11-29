@@ -5,5 +5,4 @@ export interface Usuario {
   numero_celular: number,
   fecha_nacimiento: string,
   cedula: number
-
 }

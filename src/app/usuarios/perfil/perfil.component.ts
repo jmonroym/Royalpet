@@ -8,19 +8,33 @@ import { Usuario } from '../modelo/usuario';
   styleUrls: ['./perfil.component.css']
 })
 export class PerfilComponent implements OnInit {
-  txtCedula:number = 0
-  nombre:string=""
-usuario : Usuario[]=[]
-  constructor(private srv:UsuarioService) { }
+  txtCedula: number = 0
+  usuario: Usuario[] = []
+  usuarioTemp: Usuario[] = []
+
+  nombres: string = ""
+  apellidos: string = ""
+  correo_electronico: string = ""
+  numero_celular: number = 0
+  fecha_nacimiento: string = ""
+  cedula: number = 0
+  constructor(private srv: UsuarioService) { }
 
   ngOnInit(): void {
   }
-listarUsuario(){
-  this.srv.listarUsuario(this.txtCedula).subscribe(data=>{
-this.usuario = data
-  })
-this.nombre = this.usuario.nombres
-}
 
-
+  listarUsuario() {
+    this.srv.listarUsuario(this.txtCedula).subscribe(data => {
+      if (data.length) {
+        this.usuarioTemp = data
+        this.nombres = this.usuarioTemp[0].nombres
+        this.apellidos = this.usuarioTemp[0].apellidos
+        this.correo_electronico = this.usuarioTemp[0].correo_electronico
+        this.numero_celular = this.usuarioTemp[0].numero_celular
+        this.fecha_nacimiento = this.usuarioTemp[0].fecha_nacimiento
+        this.cedula = this.usuarioTemp[0].cedula
+      }
+      this.usuario = data
+    })
+  }
 }

@@ -8,13 +8,12 @@ import { Producto } from '../modelo/producto';
   styleUrls: ['./productos-disponibles.component.css']
 })
 export class ProductosDisponiblesComponent implements OnInit {
- productos : Producto[]=[]
-  constructor(private srv:ProductoService) { }
+  productos: Producto[] = []
+  constructor(private srv: ProductoService) { }
 
   ngOnInit(): void {
-    this.srv.listarProductos().subscribe(data=>{
-this.productos = data
+    this.srv.listarProductos().subscribe(data => {
+      this.productos = data
     })
   }
-
 }

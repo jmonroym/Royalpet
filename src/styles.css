@@ -1,51 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
-.fondo{
-background-image:url("./assets/img/fondo.jpg");
-background-repeat:repeat;
+.fondo {
+  background-image: url("./assets/img/fondo.jpg");
+  background-repeat: repeat;
 
 }
 
-.Nombre_pagina{
+.Nombre_pagina {
   font-family: 'Pacifico', cursive;
   margin-left: 35%;
   font-size: 160%;
   color: red;
-  text-shadow: rgba(206,89,55,0) 2px 2px 2px ;
+  text-shadow: rgba(206, 89, 55, 0) 2px 2px 2px;
 }
-.enlaces{
+
+.enlaces {
   font-family: 'Pacifico', cursive;
   margin-top: 5%;
 }
-.navegacion{
-  margin-left:15%;
+
+.navegacion {
+  margin-left: 15%;
 }
-.nave{
+
+.nave {
   background-color: #DCC043;
   opacity: 90%;
 }
-.buscar{
+
+.buscar {
   margin-top: 4%;
   margin-left: 35%;
 }
-.contactenos{
+
+.contactenos {
   background-color: #4B4A48;
 }
-.piePagina{
+
+.piePagina {
   font-family: 'Pacifico', cursive;
   color: white;
   margin: 2%;
 }
-.textos-formulario{
+
+.textos-formulario {
   color: white;
 }
-.login{
+
+.login {
   display: none;
 }
-.registro-espacio{
-margin-left: 15%;
-margin-bottom: 5%;
-text-align: center
+
+.registro-espacio {
+  margin-left: 15%;
+  margin-bottom: 5%;
+  text-align: center
 }
-.guardar-registro{
+
+.guardar-registro {
   margin-top: 2%;
 }
