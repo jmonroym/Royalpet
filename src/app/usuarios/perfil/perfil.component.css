@@ -1,7 +1,11 @@
 .actualizar {
   margin-left: 45%;
-
+  margin-top: 2%;
 }
 .tamanio_actualizar{
   width:10%
+}
+
+.visibilidad{
+  display: none;
 }

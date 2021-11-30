@@ -11,6 +11,7 @@ export class PerfilComponent implements OnInit {
   txtCedula: number = 0
   usuario: Usuario[] = []
   usuarioTemp: Usuario[] = []
+  cedula_admin = 0
   id= ""
   nombres: string = ""
   apellidos: string = ""
@@ -53,5 +54,19 @@ export class PerfilComponent implements OnInit {
 console.log("Se ha actualizado el cliente")
     })
   }
+verificarAdmin(){
+if(this.cedula_admin!= 99){
+  alert("Clave incorrecta")
+}
+else{
+this.borrarUsuario()
+}
+}
+borrarUsuario(){
+this.srv.borrarUsuario(this.id).subscribe(data => {
+  alert("Usuario eliminado!")
+  console.log("Usuario eliminado correctamente")
+})
+}
 
 }

@@ -18,4 +18,7 @@ return this.http.put('https://backend-royalpet.glitch.me/api/usuarios/'+usuario.
  guardarUsuario(usuario:Usuarios):Observable<any>{
    return this.http.post('https://backend-royalpet.glitch.me/api/usuarios/', usuario)
  }
+ borrarUsuario(id:string):Observable<any>{
+   return this.http.delete('https://backend-royalpet.glitch.me/api/usuarios/'+id)
+ }
 }
