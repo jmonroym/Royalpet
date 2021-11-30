@@ -54,6 +54,8 @@ export class PerfilComponent implements OnInit {
 console.log("Se ha actualizado el cliente")
     })
   }
+
+
 verificarAdmin(){
 if(this.cedula_admin!= 99){
   alert("Clave incorrecta")
