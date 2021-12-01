@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductoService {
-  private URL: string = "https://backend-royalpet.glitch.me/api/productos";
+  private URL: string = "https://royalpet-api.herokuapp.com/api/productos";
   constructor(private http: HttpClient) { }
   listarProductos(): Observable<any> {
     return this.http.get(this.URL)

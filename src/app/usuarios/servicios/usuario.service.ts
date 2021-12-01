@@ -10,15 +10,15 @@ export class UsuarioService {
   //private URL:string = "http://localhost:3000/api/usuarios";
   constructor(private http: HttpClient) { }
   listarUsuario(txtCedula: number): Observable<any> {
-    return this.http.get('https://backend-royalpet.glitch.me/api/usuarios?cedula=' + txtCedula)
+    return this.http.get('https://royalpet-api.herokuapp.com/api/usuarios?cedula=' + txtCedula)
   }
-  actualizarUsuario(usuario:Usuario):Observable<any>{
-return this.http.put('https://backend-royalpet.glitch.me/api/usuarios/'+usuario._id, usuario)
+  actualizarUsuario(usuario: Usuario): Observable<any> {
+    return this.http.put('https://royalpet-api.herokuapp.com/api/usuarios/' + usuario._id, usuario)
   }
- guardarUsuario(usuario:Usuarios):Observable<any>{
-   return this.http.post('https://backend-royalpet.glitch.me/api/usuarios/', usuario)
- }
- borrarUsuario(id:string):Observable<any>{
-   return this.http.delete('https://backend-royalpet.glitch.me/api/usuarios/'+id)
- }
+  guardarUsuario(usuario: Usuarios): Observable<any> {
+    return this.http.post('https://royalpet-api.herokuapp.com/api/usuarios/', usuario)
+  }
+  borrarUsuario(id: string): Observable<any> {
+    return this.http.delete('https://royalpet-api.herokuapp.com/api/usuarios/' + id)
+  }
 }
